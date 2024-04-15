@@ -4,9 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 1rem;
     list-style: none;
     background: white;
-    padding: 4rem;
     max-width: 170rem;
 
         &__color{
@@ -29,7 +29,7 @@
 
         @for $i from 1 through 100{
             &__color:nth-last-of-type(#{$i}){
-                animation-delay: $i/10 + s;
+                animation-delay: $i/100 + s;
             }
         }
 
